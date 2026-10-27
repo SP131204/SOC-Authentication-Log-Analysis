@@ -1,0 +1,14 @@
+SEARCH 1 — Total records
+index=main source="*authentication_logs.csv"
+| stats count AS total_events
+
+SEARCH 2 — Failed logins by account and source IP
+index=main source="*authentication_logs.csv" action=failure
+| stats count AS failed_logins BY user src_ip
+| sort - failed_logins
+
+SEARCH 3 — Timeline for admin01
+index=main source="*authentication_logs.csv"
+user="admin01" src_ip="203.0.113.50"
+| sort 0 timestamp
+| table timestamp user src_ip action

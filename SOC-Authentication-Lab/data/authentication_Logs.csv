@@ -1,0 +1,13 @@
+timestamp,user,src_ip,action,host
+2026-10-27T09:00:00Z,analyst01,192.0.2.10,success,portal01
+2026-10-27T09:05:00Z,support01,192.0.2.20,failure,portal01
+2026-10-27T09:05:30Z,support01,192.0.2.20,failure,portal01
+2026-10-27T09:06:00Z,support01,192.0.2.20,success,portal01
+2026-10-27T10:00:00Z,admin01,203.0.113.50,failure,portal01
+2026-10-27T10:00:30Z,admin01,203.0.113.50,failure,portal01
+2026-10-27T10:01:00Z,admin01,203.0.113.50,failure,portal01
+2026-10-27T10:01:30Z,admin01,203.0.113.50,failure,portal01
+2026-10-27T10:02:00Z,admin01,203.0.113.50,failure,portal01
+2026-10-27T10:03:00Z,admin01,203.0.113.50,success,portal01
+2026-10-27T11:00:00Z,analyst02,192.0.2.30,success,portal01
+2026-10-27T11:10:00Z,analyst03,192.0.2.40,failure,portal01
